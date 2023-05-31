@@ -324,6 +324,10 @@ header {
 .description {
   opacity: 0;
   animation: fade-in 1s ease-in-out 0.5s forwards;
+  -webkit-animation: fadeIn 1s ease-in-out 0.5s forwards;
+  -moz-animation: fadeIn 1s ease-in-out 0.5s forwards;
+  -o-animation: fadeIn 1s ease-in-out 0.5s forwards;
+  -ms-animation: fadeIn 1s ease-in-out 0.5s forwards;
 }
 
 /* My Work Animation */
