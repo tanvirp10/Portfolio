@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<html>
-  
+<html lang="en">
   <head>
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-CWGHQ3E50J"></script>
@@ -8,95 +7,131 @@
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-
       gtag('config', 'G-CWGHQ3E50J');
     </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tanvir Patwary</title>
-    <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" href="dist/output.css">
+    <!-- Custom CSS for animations and specific styles -->
+    <style>
+      * {
+        font-family: "Courier New", monospace;
+        box-sizing: border-box;
+      }
+      @keyframes fade-in {
+        0% { opacity: 0; transform: translateY(-20px); }
+        100% { opacity: 1; transform: translateY(0); }
+      }
+      .fadeIn { animation: fade-in 1s ease-in-out forwards; }
+      @keyframes bounce {
+        0%, 100% { transform: translateY(0); }
+        50% { transform: translateY(-10px); }
+      }
+      .bounce { animation: bounce 1s ease-in-out infinite; }
+    </style>
   </head>
-  <body>
-    <header>
-      <div class="personallogo">
-        <a href="index.html"><img src="images/PersonalLogoFinal.png" class="logo"></a>
-      </div>
-      <nav>
-        <ul class="nav__links">
-          <li><a href="About Me.html">About</a></li>
-          <li><a href="Skills.html">Skills</a></li>
-          <li><a href="images/Patwary Resume.pdf" target="_blank">Resume</a></li>
-        </ul>
+  <body class="bg-[#0F0F12] text-white font-sans fadeIn">
+
+    <header class="flex justify-between items-center py-6 px-10 bg-[#0F0F12] text-white">
+      <a href="index.html">
+        <img src="images/PersonalLogoFinal.png" class="w-20 h-28 object-cover" alt="Personal Logo"> <!-- Increased height for vertical stretch -->
+      </a>
+      <nav class="flex items-center space-x-12 text-lg"> <!-- Increased space between items -->
+        <a href="About Me.html" class="hover:text-gray-400 transition duration-300">About Me</a>
+        <a href="Skills.html" class="hover:text-gray-400 transition duration-300">Skills</a>
+        <a href="images/Patwary Resume.pdf" target="_blank" class="hover:text-gray-400 transition duration-300">Resume</a>
+        <a href="mailto:tanvirp10@gmail.com" class="bg-gray-700 px-4 py-2 rounded-lg hover:bg-gray-600 transition-all duration-300">Email</a>
       </nav>
-      <a class="cta" href="mailto:tanvirp10@gmail.com"><button>Email</button></a>
     </header>
-    <div class="description">
-      <h1>
-        Hi, I'm Tan, a student specializing in UX/UI design and software development, blending creativity with technical skills to craft intuitive and functional digital experiences.</h1>
+    
+    
+     
+
+    <div class="text-center px-10 lg:px-20 lg:w-2/3 mx-auto text-3xl pt-24 pb-10 leading-relaxed">
+      <h1 class="font-serif">
+        Hi, I'm Tan, a student specializing in UX/UI design and software development, blending creativity with technical skills to craft intuitive and functional digital experiences.
+      </h1>
     </div>
-    <div class="arrow">
+    
+    <div class="text-center text-6xl py-32 animate-bounce">
       <h1>&#8595;</h1>
     </div>
-    <h1 class="mywork">My Work</h1>
-    <h2 class="uxuiprojects">UX/UI Projects</h2>
-    <div class="main">
-      <section>
-        <div class="excursion">
-          <a href="Excursion.html">
-            <img src="images/Excursion.jpg" class="excursionimg" width="800" height="400" alt="Excursion">
-          </a>
-          <div class="excursioncontent">
-            <h1>Excursion</h1>
-            <p>Excursion is a budget-based traveling mobile app designed to help people travel better financially.</p>
-          </div>
-        </div>
-
-        <div class="fttf">
-          <div class="fttfcontent">
-            <h1>Friends to the Forlorn</h1>
-            <p>Friends to the Forlorn is a non-profit organization located in Dallas, Georgia, dedicated to finding and taking care of pit-bulls.</p>
-          </div>
-          <a href="Friends to the Forlorn.html">
-            <img src="images/FTTF.jpg" class="fttfimg" width="800" height="400" alt="Friends to the Forlorn">
-          </a>
-        </div>
-
-        <div class="softwareprojects">
-          <h3>Software Projects</h3>
-          <!-- Add your Software Projects here -->
-        </div>
-        <div class="excursion">
-          <a href="Weather App.html">
-            <img src="images/Weather App Cover.jpg" class="excursionimg" width="800" height="400" alt="Excursion">
-          </a>
-          <div class="excursioncontent">
-            <h1>Weather App</h1>
-            <p>A modern weather app with dynamic animations, accurate forecasts, and a visually appealing design for an immersive and delightful user experience.</p>
-          </div>
-        </div>
-      </section>
+    
+    <!-- My Work Section -->
+    <div class="text-center mt-48"> <!-- Increased top margin to push down "My Work" -->
+      <h1 class="mywork text-4xl font-bold mb-16">My Work</h1>
+      <h2 class="uxuiprojects text-2xl mt-4 mb-16">UX/UI Projects</h2>
     </div>
-    <footer>
-      <div class="container">
-        <div class="footer-main">
-          <div class="footer-column">
-            <h3 class="footer-heading">Projects</h3>
-            <a href="Excursion.html" class="footer-link">Excursion</a>
-            <a href="Friends to the Forlorn.html" class="footer-link">Friends to the Forlorn</a>
-            <a href="Weather App.html" class="footer-link">Weather App</a>
-          </div>
-          <div class="footer-column">
-            <h3 class="footer-heading">Contact</h3>
-            <a href="https://www.linkedin.com/in/tanvir-patwary-5817a418b/" target="_blank" class="footer-link">LinkedIn</a>
-            <a href="mailto:tanvirp10@gmail.com" class="footer-link">Email</a>
-            <a href="images/Patwary Resume.pdf" target="_blank" class="footer-link">Resume</a>
-          </div>
+    
+
+    <!-- Project Section -->
+    <div class="main mt-10 space-y-16 px-10 max-w-screen-lg mx-auto fadeIn">
+      <!-- Excursion Project -->
+      <div class="excursion flex flex-col lg:flex-row items-center space-y-6 lg:space-y-0 lg:space-x-10">
+        <a href="Excursion.html" class="w-full lg:w-1/2">
+          <img src="images/Excursion.jpg" class="excursionimg w-full h-auto rounded-lg" alt="Excursion">
+        </a>
+        <div class="excursioncontent lg:w-1/2 text-left">
+          <h1 class="text-2xl font-bold mb-2">Excursion</h1>
+          <p class="text-lg">Excursion is a budget-based traveling mobile app designed to help people travel better financially.</p>
         </div>
       </div>
-      <div class="copyright">
-        <p>Copyright &copy; 2024 Tanvir Patwary</p>
+
+      <!-- Friends to the Forlorn Project -->
+      <div class="fttf flex flex-col lg:flex-row items-center space-y-6 lg:space-y-0 lg:space-x-10">
+        <div class="fttfcontent lg:w-1/2 text-left">
+          <h1 class="text-2xl font-bold mb-2">Friends to the Forlorn</h1>
+          <p class="text-lg">Friends to the Forlorn is a non-profit organization located in Dallas, Georgia, dedicated to finding and taking care of pit bulls.</p>
+        </div>
+        <a href="Friends to the Forlorn.html" class="w-full lg:w-1/2">
+          <img src="images/FTTF.jpg" class="fttfimg w-full h-auto rounded-lg" alt="Friends to the Forlorn">
+        </a>
       </div>
-    </footer>
+
+      <!-- Software Projects Heading -->
+      <div class="text-center">
+        <h3 class="softwareprojects text-2xl font-semibold">Software Projects</h3>
+      </div>
+
+      <!-- Weather App Project -->
+      <div class="excursion flex flex-col lg:flex-row items-center space-y-6 lg:space-y-0 lg:space-x-10">
+        <a href="Weather App.html" class="w-full lg:w-1/2">
+          <img src="images/Weather App Cover.jpg" class="excursionimg w-full h-auto rounded-lg" alt="Weather App">
+        </a>
+        <div class="excursioncontent lg:w-1/2 text-left">
+          <h1 class="text-2xl font-bold mb-2">Weather App</h1>
+          <p class="text-lg">A modern weather app with dynamic animations, accurate forecasts, and a visually appealing design for an immersive and delightful user experience.</p>
+        </div>
+      </div>
+    </div>
+
+<!-- Main content with padding at the bottom to account for footer -->
+<div class="main mt-10 space-y-16 px-10 max-w-screen-lg mx-auto pb-32 fadeIn">
+  <!-- Your other content sections go here -->
+</div>
+
+<!-- Footer (no fixed position) -->
+<footer class="bg-[#0F0F12] text-white py-8 px-4 text-center font-serif">
+  <div class="container mx-auto flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+    <div>
+      <h3 class="footer-heading text-lg font-semibold mb-4">Projects</h3>
+      <div class="space-y-2 text-sm">
+        <a href="Excursion.html" class="footer-link hover:text-gray-400 block">Excursion</a>
+        <a href="Friends to the Forlorn.html" class="footer-link hover:text-gray-400 block">Friends to the Forlorn</a>
+        <a href="Weather App.html" class="footer-link hover:text-gray-400 block">Weather App</a>
+      </div>
+    </div>
+    <div>
+      <h3 class="footer-heading text-lg font-semibold mb-4">Contact</h3>
+      <div class="space-y-2 text-sm">
+        <a href="https://www.linkedin.com/in/tanvir-patwary-5817a418b/" target="_blank" class="footer-link hover:text-gray-400 block">LinkedIn</a>
+        <a href="mailto:tanvirp10@gmail.com" class="footer-link hover:text-gray-400 block">Email</a>
+        <a href="images/Patwary Resume.pdf" target="_blank" class="footer-link hover:text-gray-400 block">Resume</a>
+      </div>
+    </div>
+  </div>
+</footer>
+  
   </body>
 </html>
