@@ -19,9 +19,16 @@
         font-family: "Courier New", monospace;
         box-sizing: border-box;
       }
+      @keyframes fadeIn {
+        0% { opacity: 0; transform: translateY(-20px); }
+        100% { opacity: 1; transform: translateY(0); }
+      }
+      .fadeIn { 
+        animation: fadeIn 1s ease-in-out forwards; 
+      }
     </style>
   </head>
-  <body class="bg-[#0F0F12] text-white font-sans">
+  <body class="bg-[#0F0F12] text-white font-sans fadeIn">
 
     <!-- Header -->
     <header class="flex justify-between items-center py-6 px-10 bg-[#0F0F12] text-white">
@@ -29,7 +36,7 @@
         <img src="images/PersonalLogoFinal.png" class="w-20 h-28 object-cover" alt="Personal Logo">
       </a>
       <nav class="flex items-center space-x-12 text-lg">
-        <a href="About Me.html" class="hover:text-gray-400 transition duration-300">About</a>
+        <a href="About Me.html" class="hover:text-gray-400 transition duration-300">About Me</a>
         <a href="Skills.html" class="hover:text-gray-400 transition duration-300">Skills</a>
         <a href="images/Patwary Resume.pdf" target="_blank" class="hover:text-gray-400 transition duration-300">Resume</a>
         <a href="mailto:tanvirp10@gmail.com" class="bg-gray-700 px-4 py-2 rounded-lg hover:bg-gray-600 transition-all duration-300">Email</a>

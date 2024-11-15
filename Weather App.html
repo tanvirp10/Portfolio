@@ -1,84 +1,138 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-CWGHQ3E50J"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-CWGHQ3E50J');
-</script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-CWGHQ3E50J"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-CWGHQ3E50J');
+    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mobile Weather App</title>
-    <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" href="dist/output.css">
+    <!-- Custom CSS for Font -->
+    <style>
+      * {
+        font-family: "Courier New", monospace;
+        box-sizing: border-box;
+      }
+      @keyframes fadeIn {
+        0% { opacity: 0; transform: translateY(-20px); }
+        100% { opacity: 1; transform: translateY(0); }
+      }
+      .fadeIn { 
+        animation: fadeIn 1s ease-in-out forwards; 
+      }
+    </style>
   </head>
-  <body>
-    <header>
-      <div class="personallogo">
-        <a href="index.html"><img src="images/PersonalLogoFinal.png" class="logo"></a>
-      </div>
-      <nav>
-        <ul class="nav__links">
-          <li><a href="About Me.html">About</a></li>
-          <li><a href="Skills.html">Skills</a></li>
-          <li><a href="images/Patwary Resume.pdf" target="_blank">Resume</a></li>
-        </ul>
+  <body class="bg-[#0F0F12] text-white font-sans fadeIn">
+
+    <!-- Header -->
+    <header class="flex justify-between items-center py-6 px-10 bg-[#0F0F12] text-white">
+      <a href="index.html">
+        <img src="images/PersonalLogoFinal.png" class="w-20 h-28 object-cover" alt="Personal Logo">
+      </a>
+      <nav class="flex items-center space-x-12 text-lg">
+        <a href="About Me.html" class="hover:text-gray-400 transition duration-300">About Me</a>
+        <a href="Skills.html" class="hover:text-gray-400 transition duration-300">Skills</a>
+        <a href="images/Patwary Resume.pdf" target="_blank" class="hover:text-gray-400 transition duration-300">Resume</a>
+        <a href="mailto:tanvirp10@gmail.com" class="bg-gray-700 px-4 py-2 rounded-lg hover:bg-gray-600 transition-all duration-300">Email</a>
       </nav>
-      <a class="cta" href="mailto:tanvirp10@gmail.com"><button>Email</button></a>
     </header>
-    <div class="main">
-      <div class="excursioncontent">
-        <h1 style="font-size: 50px;">Mobile Weather Application</h1>
-        <p>A simplistic and visually appealing mobile weather app created with Flutter, providing real-time weather information and forecasts.</p>
-      </div>
-      <div class="column-2 w-col w-col-2 w-col-medium-3"></div>
-      <div class="heading">Roles</div>
-      <div class="work">Tanvir Patwary - Developer</div>
-      <div class="photo-container">
-        <img src="images/Cities.jpg" class="weatherappimg" style="width:1200px;height:auto;">
 
+    <!-- Main Content -->
+    <div class="main px-10 lg:px-20 max-w-screen-lg mx-auto py-10 space-y-16">
+      <!-- Page Title and Overview -->
+      <div class="text-center">
+        <h1 class="text-5xl font-bold">Mobile Weather Application</h1>
+        <p class="mt-6 text-lg">A simplistic and visually appealing mobile weather app created with Flutter, providing real-time weather information and forecasts.</p>
+      </div>
+      
+      <!-- Role Section -->
+      <div>
+        <h2 class="text-2xl font-semibold mb-2">Roles</h2>
+        <p class="text-lg">Tanvir Patwary - Developer</p>
+      </div>
+
+      <!-- Project Image -->
+      <img src="images/Cities.jpg" class="w-full rounded-lg mb-10" alt="Weather App Project Image">
+
+      <!-- About the Project Section -->
+      <section class="space-y-6">
+        <h2 class="text-3xl font-semibold mb-4">About the Project</h2>
+        <p class="text-lg leading-relaxed">
+          The Weather App's primary goal is to revolutionize the way users engage with weather information. Through a sleek and visually captivating interface, we aim to deliver real-time weather conditions in a modern and seamless manner. Departing from conventional weather apps, our approach involves a simplistic yet dynamic layout, coupled with enchanting animations.
+        </p>
+      </section>
+
+      <!-- Inspiration Section -->
+      <section class="space-y-6">
+        <h2 class="text-3xl font-semibold mb-4">Inspiration</h2>
+        <p class="text-lg leading-relaxed">
+          My primary source of inspiration for this project stemmed from the default iOS weather app. The app's simplicity, coupled with the ability to provide comprehensive weather information with just a touch, left a lasting impression. I admired the minimalist design that effortlessly displayed the current weather, temperature, and both daily and weekly forecasts.
+        </p>
+      </section>
+
+      <!-- System Design Section -->
+      <section class="space-y-6">
+        <h2 class="text-3xl font-semibold mb-4 text-center">System Design</h2>
+        <img src="images/System Design2.png" class="w-2/3 mx-auto rounded-lg mb-4" alt="System Design">
+        <p class="text-lg leading-relaxed">
+          In the process of developing the Weather App, I meticulously crafted a comprehensive system design. This design serves as a blueprint, illustrating how the app seamlessly acquires data from the API, interprets it, and presents users with accurate information regarding weather conditions and temperatures.
+        </p>
+      </section>
+
+      <!-- Setup and Development Section -->
+      <section class="space-y-6">
+        <h2 class="text-3xl font-semibold mb-4">Setup and Development</h2>
+        <p class="text-lg leading-relaxed">
+          In the initial phase of development, I established a Flutter project as the foundation for the Weather App. Following this, I configured the development environment by installing the requisite packages and dependencies. The integration of the weather API was a crucial step, enabling the app to fetch real-time weather data.
+        </p>
+      </section>
+
+      <!-- Personal Testing and Debugging Section -->
+      <section class="space-y-6">
+        <h2 class="text-3xl font-semibold mb-4">Personal Testing and Debugging</h2>
+        <p class="text-lg leading-relaxed">
+          During the testing phase, I achieved success by incorporating JSON files to visualize weather conditions within the app. However, the process revealed various bugs, especially when handling erroneous cases derived from inconsistencies in the weather API data. This presented a notable challenge that required thorough debugging to ensure the app's reliability and accuracy in presenting weather information.
+        </p>
+      </section>
+
+      <!-- High-Fidelity Prototype Section -->
+      <section class="space-y-6">
+        <h2 class="text-3xl font-semibold mb-4 text-center">High-Fidelity Prototype</h2>
+        <img src="images/Weather App Demo.gif" class="w-full rounded-lg mt-6" alt="Weather App High-Fidelity Prototype">
+      </section>
+
+      <!-- Conclusion and Future Implementations Section -->
+      <section class="space-y-6">
+        <h2 class="text-3xl font-semibold mb-4">Conclusion and Future Implementations</h2>
+        <p class="text-lg leading-relaxed">
+          Following the successful debugging phase, the app now accurately reflects weather conditions and dynamically adjusts the background based on the time of day. Looking ahead, future implementations will focus on enhancing the app's capabilities, including a feature for future forecasting, a toggle button to switch between Fahrenheit and Celsius, and additional visually appealing features.
+        </p>
+      </section>
     </div>
-      <div class="excursioncontent">
-        <h1 class="centerheading">About the Project</h1>
-        <p>The Weather App's primary goal is to revolutionize the way users engage with weather information. Through a sleek and visually captivating interface, we aim to deliver real-time weather conditions in a modern and seamless manner. Departing from conventional weather apps, our approach involves a simplistic yet dynamic layout, coupled with enchanting animations. The objective is to provide users with a reliable platform that not only informs but also captivates, ensuring a refreshing and enjoyable weather experience.</p>
-        <h1 class="centerheading">Inspiration</h1>
-        <p>My primary source of inspiration for this project stemmed from the default iOS weather app. The app's simplicity, coupled with the ability to provide comprehensive weather information with just a touch, left a lasting impression. I admired the minimalist design that effortlessly displayed the current weather, temperature, and both daily and weekly forecasts. While there were several other weather apps that caught my attention, it was the straightforward approach and visual interpretation of the Apple weather app that significantly influenced my design choices. The emphasis on user-friendly features and a clean interface became a driving force in shaping the direction of my project.</p>
-        <h1 class="centerheading">System Design</h1>
-        <img src="images/System Design2.png" class="centerimg" style="width:800px;height:auto;">
-        <p>In the process of developing the Weather App, I meticulously crafted a comprehensive system design. This design serves as a blueprint, illustrating how the app seamlessly acquires data from the API, interprets it, and presents users with accurate information regarding weather conditions and temperatures. The visual representation of this system design elucidates the intricate process of data retrieval and enhances the overall understanding of the app's functionality.</p>
-        <h1 class="centerheading">Setup and Development</h1>
-        <p>In the initial phase of development, I established a Flutter project as the foundation for the Weather App. Following this, I configured the development environment by installing the requisite packages and dependencies. The integration of the weather API was a crucial step, enabling the app to fetch real-time weather data. Subsequently, I constructed a dedicated page within the app to effectively display the weather information, fostering a user-friendly interface. This setup laid the groundwork for the subsequent development stages.</p>
-        <h1 class="centerheading">Personal Testing and Debugging</h1>
-        <p>During the testing phase, I achieved success by incorporating JSON files to visualize weather conditions within the app. However, the process revealed various bugs, especially when handling erroneous cases derived from inconsistencies in the weather API data. This presented a notable challenge that required thorough debugging to ensure the app's reliability and accuracy in presenting weather information.</p>
-        <img src="images/Weather App Demo.gif" class="centerimg" style="width:1000px;height:auto;">
-        <h1 class="centerheading">Conclusion and Future Implementations</h1>
-        <p>Following the successful debugging phase, the app now accurately reflects weather conditions and dynamically adjusts the background based on the time of day. Looking ahead, future implementations will focus on enhancing the app's capabilities. Planned enhancements include incorporating a feature for future forecasting, implementing a toggle button to switch between Fahrenheit and Celsius temperature units, and introducing additional visually appealing features to enhance the overall user experience.</p>
-      </div>
-      <footer>
-        <div class="container">
-          <div class="footer-main">
-            <div class="footer-column">
-              <h3 class="footer-heading">Projects</h3>
-              <a href="Excursion.html" class="footer-link">Excursion</a>
-              <a href="Friends to the Forlorn.html" class="footer-link">Friends to the Forlorn</a>
-              <a href="Weather App.html" class="footer-link">Weather App</a>
-            </div>
-            <div class="footer-column">
-              <h3 class="footer-heading">Contact</h3>
-              <a href="https://www.linkedin.com/in/tanvir-patwary-5817a418b/" target="_blank" class="footer-link">LinkedIn</a>
-              <a href="mailto:tanvirp10@gmail.com" class="footer-link">Email</a>
-              <a href="images/Patwary Resume.pdf" target="_blank" class="footer-link">Resume</a>
-            </div>
-          </div>
-        </div>
-        <div class="copyright">
-          <p>Copyright &copy; 2024 Tanvir Patwary</p>
-        </div>
-      </footer>
-  </body>
 
+    <!-- Footer -->
+    <footer class="bg-[#0F0F12] text-white py-8 px-4 text-center font-serif mt-20">
+      <div class="container mx-auto flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+        <div>
+          <h3 class="text-lg font-semibold mb-4">Projects</h3>
+          <a href="Excursion.html" class="hover:text-gray-400 block">Excursion</a>
+          <a href="Friends to the Forlorn.html" class="hover:text-gray-400 block">Friends to the Forlorn</a>
+          <a href="Weather App.html" class="hover:text-gray-400 block">Weather App</a>
+        </div>
+        <div>
+          <h3 class="text-lg font-semibold mb-4">Contact</h3>
+          <a href="https://www.linkedin.com/in/tanvir-patwary-5817a418b/" target="_blank" class="hover:text-gray-400 block">LinkedIn</a>
+          <a href="mailto:tanvirp10@gmail.com" class="hover:text-gray-400 block">Email</a>
+          <a href="images/Patwary Resume.pdf" target="_blank" class="hover:text-gray-400 block">Resume</a>
+        </div>
+      </div>
+    </footer>
+
+  </body>
 </html>
