@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-CWGHQ3E50J"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-CWGHQ3E50J');
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Shop Application</title>
+    <link rel="stylesheet" href="dist/output.css">
+    <style>
+      * {
+        font-family: "Courier New", monospace;
+        box-sizing: border-box;
+      }
+      @keyframes fadeIn {
+        0% { opacity: 0; transform: translateY(-20px); }
+        100% { opacity: 1; transform: translateY(0); }
+      }
+      .fadeIn { animation: fadeIn 1s ease-in-out forwards; }
+    </style>
+  </head>
+  <body class="bg-[#0F0F12] text-white font-sans fadeIn">
+
+    <!-- Header -->
+    <header class="flex justify-between items-center py-6 px-10 bg-[#0F0F12] text-white">
+      <a href="index.html">
+        <img src="images/PersonalLogoFinal.png" class="w-20 h-28 object-cover" alt="Personal Logo">
+      </a>
+      <nav class="flex items-center space-x-12 text-lg">
+        <a href="About Me.html" class="hover:text-gray-400 transition duration-300">About Me</a>
+        <a href="Skills.html" class="hover:text-gray-400 transition duration-300">Skills</a>
+        <a href="images/TanvirPatwary_Resume.pdf" target="_blank" class="hover:text-gray-400 transition duration-300">Resume</a>
+        <a href="mailto:tanvirp10@gmail.com" class="bg-gray-700 px-4 py-2 rounded-lg hover:bg-gray-600 transition-all duration-300">Email</a>
+      </nav>
+    </header>
+
+    <!-- Main Content -->
+    <div class="main px-10 lg:px-20 max-w-screen-lg mx-auto py-10 space-y-16">
+      <!-- Page Title and Overview -->
+      <div class="text-center">
+        <h1 class="text-5xl font-bold">Coffee Shop Application</h1>
+        <p class="mt-6 text-lg">A full-stack web application for ordering coffee online, built with Vue.js, .NET, MySQL, and Stripe for payments.</p>
+      </div>
+      
+      <!-- Role Section -->
+      <div>
+        <h2 class="text-2xl font-semibold mb-2">Roles</h2>
+        <p class="text-lg">Tanvir Patwary - Full Stack Developer</p>
+      </div>
+
+      <!-- Project Image -->
+      <img src="images/CoffeeAppCover.jpg" class="w-full rounded-lg mb-10" alt="Coffee Shop App Image">
+
+      <!-- About the Project Section -->
+      <section class="space-y-6">
+        <h2 class="text-3xl font-semibold mb-4">About the Project</h2>
+        <p class="text-lg leading-relaxed">
+          This application allows customers to browse a menu, customize their drinks, and place orders online. The app integrates **Stripe** for secure payments, **JWT authentication** for user security, and **MySQL** for database management using **DBeaver** as a GUI tool.
+        </p>
+      </section>
+
+      <!-- Tech Stack Section -->
+      <section class="space-y-6">
+        <h2 class="text-3xl font-semibold mb-4 text-center">Tech Stack</h2>
+        <p class="text-lg leading-relaxed text-center">
+          **Frontend**: Vue.js, Tailwind CSS <br>
+          **Backend**: .NET 8, JWT Authentication <br>
+          **Database**: MySQL, managed using DBeaver <br>
+          **Payments**: Stripe API for handling transactions
+        </p>
+      </section>
+
+      <!-- Future Implementations -->
+      <section class="space-y-6">
+        <h2 class="text-3xl font-semibold mb-4">Future Implementations</h2>
+        <p class="text-lg leading-relaxed">
+          - Order tracking system to update users on order status <br>
+          - Loyalty program for frequent customers <br>
+          - Admin dashboard for managing inventory and promotions
+        </p>
+      </section>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-[#0F0F12] text-white py-8 px-4 text-center font-serif mt-20">
+      <div class="container mx-auto flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+        <div>
+          <h3 class="text-lg font-semibold mb-4">Projects</h3>
+          <a href="Excursion.html" class="hover:text-gray-400 block">Excursion</a>
+          <a href="Friends to the Forlorn.html" class="hover:text-gray-400 block">Friends to the Forlorn</a>
+          <a href="CoffeeApp.html" class="hover:text-gray-400 block">Coffee Shop App</a>
+        </div>
+        <div>
+          <h3 class="text-lg font-semibold mb-4">Contact</h3>
+          <a href="https://www.linkedin.com/in/tanvir-patwary-5817a418b/" target="_blank" class="hover:text-gray-400 block">LinkedIn</a>
+          <a href="mailto:tanvirp10@gmail.com" class="hover:text-gray-400 block">Email</a>
+          <a href="images/TanvirPatwary_Resume.pdf" target="_blank" class="hover:text-gray-400 block">Resume</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
