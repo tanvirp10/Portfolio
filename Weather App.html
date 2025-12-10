@@ -11,7 +11,7 @@
     </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mobile Weather App</title>
+    <title>Weather App - Tanvir Patwary</title>
     <link rel="stylesheet" href="dist/output.css">
     <!-- Custom CSS for Font -->
     <style>
@@ -45,75 +45,110 @@
 
     <!-- Main Content -->
     <div class="main px-10 lg:px-20 max-w-screen-lg mx-auto py-10 space-y-16">
+      
       <!-- Page Title and Overview -->
       <div class="text-center">
-        <h1 class="text-5xl font-bold">Mobile Weather Application</h1>
-        <p class="mt-6 text-lg">A simplistic and visually appealing mobile weather app created with Flutter, providing real-time weather information and forecasts.</p>
+        <h1 class="text-5xl font-bold">Weather Mobile App</h1>
+        <p class="mt-6 text-lg">A mobile weather app built with Flutter and Dart, featuring real-time weather data and dynamic UI animations.</p>
+        
+        <!-- Tech Stack Badge -->
+        <div class="flex justify-center gap-3 mt-6">
+          <span class="bg-blue-700 px-4 py-2 rounded-full text-sm">Flutter</span>
+          <span class="bg-blue-700 px-4 py-2 rounded-full text-sm">Dart</span>
+          <span class="bg-orange-700 px-4 py-2 rounded-full text-sm">OpenWeather API</span>
+        </div>
       </div>
       
       <!-- Role Section -->
       <div>
-        <h2 class="text-2xl font-semibold mb-2">Roles</h2>
+        <h2 class="text-2xl font-semibold mb-2">Role</h2>
         <p class="text-lg">Tanvir Patwary - Developer</p>
       </div>
 
       <!-- Project Image -->
-      <img src="images/Cities.jpg" class="w-full rounded-lg mb-10" alt="Weather App Project Image">
+      <img src="images/Cities.jpg" class="w-full rounded-lg mb-10" alt="Weather App Interface">
 
       <!-- About the Project Section -->
       <section class="space-y-6">
         <h2 class="text-3xl font-semibold mb-4">About the Project</h2>
         <p class="text-lg leading-relaxed">
-          The Weather App's primary goal is to revolutionize the way users engage with weather information. Through a sleek and visually captivating interface, we aim to deliver real-time weather conditions in a modern and seamless manner. Departing from conventional weather apps, our approach involves a simplistic yet dynamic layout, coupled with enchanting animations.
+          A mobile weather application that provides real-time weather information with location-based forecasts. The app integrates with the OpenWeather API to fetch current conditions and daily forecasts, featuring a clean interface with dynamic backgrounds that adjust based on weather conditions and time of day.
         </p>
       </section>
 
-      <!-- Inspiration Section -->
+      <!-- Tech Stack Section -->
       <section class="space-y-6">
-        <h2 class="text-3xl font-semibold mb-4">Inspiration</h2>
+        <h2 class="text-3xl font-semibold mb-4">Tech Stack</h2>
+        <div class="bg-[#1E1E20] p-6 rounded-lg">
+          <ul class="list-disc list-inside text-lg space-y-2">
+            <li><strong>Flutter & Dart</strong> - Cross-platform mobile framework</li>
+            <li><strong>OpenWeather API</strong> - Real-time weather data integration</li>
+            <li><strong>JSON parsing</strong> - Data handling and formatting</li>
+            <li><strong>Geolocation</strong> - Location-based weather forecasts</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Key Features Section -->
+      <section class="space-y-6">
+        <h2 class="text-3xl font-semibold mb-4">Key Features</h2>
+        <div class="space-y-4">
+          <div class="bg-[#1E1E20] p-5 rounded-lg">
+            <h3 class="text-xl font-semibold mb-2">🌤️ Real-Time Weather Data</h3>
+            <p class="text-lg">Integration with OpenWeather API for current conditions, temperature, and daily forecasts.</p>
+          </div>
+          <div class="bg-[#1E1E20] p-5 rounded-lg">
+            <h3 class="text-xl font-semibold mb-2">📍 Location-Based Forecasts</h3>
+            <p class="text-lg">Automatic location detection to display local weather information.</p>
+          </div>
+          <div class="bg-[#1E1E20] p-5 rounded-lg">
+            <h3 class="text-xl font-semibold mb-2">🎨 Dynamic UI</h3>
+            <p class="text-lg">Background animations that change based on current weather conditions and time of day.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Development Process Section -->
+      <section class="space-y-6">
+        <h2 class="text-3xl font-semibold mb-4">Development Process</h2>
         <p class="text-lg leading-relaxed">
-          My primary source of inspiration for this project stemmed from the default iOS weather app. The app's simplicity, coupled with the ability to provide comprehensive weather information with just a touch, left a lasting impression. I admired the minimalist design that effortlessly displayed the current weather, temperature, and both daily and weekly forecasts.
+          Built with Flutter for cross-platform compatibility. Integrated the OpenWeather API to fetch real-time weather data and implemented JSON parsing to handle API responses. The UI was designed to be responsive and visually appealing, with animations that adjust based on weather conditions.
         </p>
-      </section>
-
-      <!-- System Design Section -->
-      <section class="space-y-6">
-        <h2 class="text-3xl font-semibold mb-4 text-center">System Design</h2>
-        <img src="images/System Design2.png" class="w-2/3 mx-auto rounded-lg mb-4" alt="System Design">
         <p class="text-lg leading-relaxed">
-          In the process of developing the Weather App, I meticulously crafted a comprehensive system design. This design serves as a blueprint, illustrating how the app seamlessly acquires data from the API, interprets it, and presents users with accurate information regarding weather conditions and temperatures.
+          Challenges included handling inconsistent API data formats and ensuring accurate weather visualization. Implemented error handling and fallback mechanisms to maintain app reliability even with incomplete data from the API.
         </p>
       </section>
 
-      <!-- Setup and Development Section -->
+      <!-- App Demo Section -->
       <section class="space-y-6">
-        <h2 class="text-3xl font-semibold mb-4">Setup and Development</h2>
-        <p class="text-lg leading-relaxed">
-          In the initial phase of development, I established a Flutter project as the foundation for the Weather App. Following this, I configured the development environment by installing the requisite packages and dependencies. The integration of the weather API was a crucial step, enabling the app to fetch real-time weather data.
-        </p>
+        <h2 class="text-3xl font-semibold mb-4 text-center">Application Demo</h2>
+        <img src="images/Weather App Demo.gif" class="w-full rounded-lg shadow-2xl" alt="Weather App Demo">
       </section>
 
-      <!-- Personal Testing and Debugging Section -->
+      <!-- What I Learned Section -->
       <section class="space-y-6">
-        <h2 class="text-3xl font-semibold mb-4">Personal Testing and Debugging</h2>
-        <p class="text-lg leading-relaxed">
-          During the testing phase, I achieved success by incorporating JSON files to visualize weather conditions within the app. However, the process revealed various bugs, especially when handling erroneous cases derived from inconsistencies in the weather API data. This presented a notable challenge that required thorough debugging to ensure the app's reliability and accuracy in presenting weather information.
-        </p>
+        <h2 class="text-3xl font-semibold mb-4">What I Learned</h2>
+        <ul class="list-disc list-inside text-lg space-y-2 leading-relaxed">
+          <li>Working with third-party APIs and handling asynchronous data requests</li>
+          <li>JSON parsing and data transformation in Dart</li>
+          <li>Mobile UI design with Flutter widgets and animations</li>
+          <li>Error handling for unreliable external data sources</li>
+          <li>Geolocation services and location-based features</li>
+        </ul>
       </section>
 
-      <!-- High-Fidelity Prototype Section -->
+      <!-- Future Enhancements Section -->
       <section class="space-y-6">
-        <h2 class="text-3xl font-semibold mb-4 text-center">High-Fidelity Prototype</h2>
-        <img src="images/Weather App Demo.gif" class="w-full rounded-lg mt-6" alt="Weather App High-Fidelity Prototype">
+        <h2 class="text-3xl font-semibold mb-4">Future Enhancements</h2>
+        <ul class="list-disc list-inside text-lg space-y-2 leading-relaxed">
+          <li>Deploy to iOS and Android app stores</li>
+          <li>Add 7-day weather forecast</li>
+          <li>Implement temperature unit toggle (Fahrenheit/Celsius)</li>
+          <li>Save favorite locations</li>
+          <li>Push notifications for weather alerts</li>
+        </ul>
       </section>
 
-      <!-- Conclusion and Future Implementations Section -->
-      <section class="space-y-6">
-        <h2 class="text-3xl font-semibold mb-4">Conclusion and Future Implementations</h2>
-        <p class="text-lg leading-relaxed">
-          Following the successful debugging phase, the app now accurately reflects weather conditions and dynamically adjusts the background based on the time of day. Looking ahead, future implementations will focus on enhancing the app's capabilities, including a feature for future forecasting, a toggle button to switch between Fahrenheit and Celsius, and additional visually appealing features.
-        </p>
-      </section>
     </div>
 
     <!-- Footer -->
@@ -121,9 +156,9 @@
       <div class="container mx-auto flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
         <div>
           <h3 class="text-lg font-semibold mb-4">Projects</h3>
-          <a href="Excursion.html" class="hover:text-gray-400 block">Excursion</a>
-          <a href="Friends to the Forlorn.html" class="hover:text-gray-400 block">Friends to the Forlorn</a>
+          <a href="Coffee Shop App.html" class="hover:text-gray-400 block">Coffee Shop App</a>
           <a href="Weather App.html" class="hover:text-gray-400 block">Weather App</a>
+          <a href="https://github.com/tanvirp10" target="_blank" class="hover:text-gray-400 block">GitHub Profile</a>
         </div>
         <div>
           <h3 class="text-lg font-semibold mb-4">Contact</h3>

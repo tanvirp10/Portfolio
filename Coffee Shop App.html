@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-CWGHQ3E50J"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-CWGHQ3E50J');
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Shop Ordering System</title>
+    <link rel="stylesheet" href="dist/output.css">
+    <!-- Custom CSS for Font -->
+    <style>
+      * {
+        font-family: "Courier New", monospace;
+        box-sizing: border-box;
+      }
+      @keyframes fadeIn {
+        0% { opacity: 0; transform: translateY(-20px); }
+        100% { opacity: 1; transform: translateY(0); }
+      }
+      .fadeIn { 
+        animation: fadeIn 1s ease-in-out forwards; 
+      }
+    </style>
+  </head>
+  <body class="bg-[#0F0F12] text-white font-sans fadeIn">
+
+    <!-- Header -->
+    <header class="flex justify-between items-center py-6 px-10 bg-[#0F0F12] text-white">
+      <a href="index.html">
+        <img src="images/PersonalLogoFinal.png" class="w-20 h-28 object-cover" alt="Personal Logo">
+      </a>
+      <nav class="flex items-center space-x-12 text-lg">
+        <a href="About Me.html" class="hover:text-gray-400 transition duration-300">About Me</a>
+        <a href="Skills.html" class="hover:text-gray-400 transition duration-300">Skills</a>
+        <a href="images/TanvirPatwary_Resume.pdf" target="_blank" class="hover:text-gray-400 transition duration-300">Resume</a>
+        <a href="mailto:tanvirp10@gmail.com" class="bg-gray-700 px-4 py-2 rounded-lg hover:bg-gray-600 transition-all duration-300">Email</a>
+      </nav>
+    </header>
+
+    <!-- Main Content -->
+    <div class="main px-10 lg:px-20 max-w-screen-lg mx-auto py-10 space-y-16">
+      
+      <!-- Page Title and Overview -->
+      <div class="text-center">
+        <h1 class="text-5xl font-bold">Coffee Shop Ordering System</h1>
+        <p class="mt-6 text-lg">A full-stack MEVN application built to streamline mobile ordering for coffee shops with drive-through service.</p>
+        
+        <!-- Action Buttons -->
+        <div class="flex justify-center space-x-4 mt-16">
+          <a href="https://coffee-app-frontend-eta.vercel.app" target="_blank" class="bg-gray-700 px-6 py-3 rounded-lg hover:bg-gray-600 transition text-lg font-semibold">
+            Live Demo
+          </a>
+          <a href="https://github.com/tanvirp10/coffee-app" target="_blank" class="bg-gray-700 px-6 py-3 rounded-lg hover:bg-gray-600 transition text-lg font-semibold">
+            GitHub Code
+          </a>
+        </div>
+      </div>
+      
+      <!-- Role Section -->
+      <div>
+        <h2 class="text-2xl font-semibold mb-2">Role</h2>
+        <p class="text-lg">Tanvir Patwary - Full-Stack Developer</p>
+      </div>
+
+      <!-- Project Image -->
+      <img src="images/coffeeshopcheckout.png" class="w-full rounded-lg mb-10" alt="Coffee Shop Checkout Interface">
+
+      <!-- About the Project Section -->
+      <section class="space-y-6">
+        <h2 class="text-3xl font-semibold mb-4">About the Project</h2>
+        <p class="text-lg leading-relaxed">
+          The Coffee Shop Ordering System is a production-ready web application designed to solve a real problem: long drive-through wait times at coffee shops. Customers can order ahead on their mobile devices, and staff can manage orders in real-time through a dedicated admin dashboard.
+        </p>
+        <p class="text-lg leading-relaxed">
+          This project demonstrates end-to-end development capabilities, from database design and REST API architecture to responsive frontend implementation and secure authentication. The system is fully deployed and operational, handling real transactions through Stripe's payment infrastructure.
+        </p>
+      </section>
+
+      <!-- Problem Statement Section -->
+      <section class="space-y-6">
+        <h2 class="text-3xl font-semibold mb-4">The Problem</h2>
+        <p class="text-lg leading-relaxed">
+          Coffee shops with drive-through service face several challenges during rush hours: long wait times that reduce customer satisfaction, verbal order-taking that leads to miscommunication and remake costs, and third-party delivery apps that charge 25-30% commission per order. Manual order management also creates inefficiencies for staff who must juggle in-person customers with drive-through orders.
+        </p>
+      </section>
+
+      <!-- Technical Architecture Section -->
+      <section class="space-y-6">
+        <h2 class="text-3xl font-semibold mb-4 text-center">Technical Architecture</h2>
+        
+        <!-- ASCII Architecture Diagram -->
+        <div class="bg-[#1E1E20] p-8 rounded-lg overflow-x-auto flex justify-center">
+          <pre class="text-sm md:text-base mx-auto">
+      ┌─────────────────┐         ┌─────────────────┐         ┌─────────────────┐
+      │   FRONTEND      │         │    BACKEND      │         │    DATABASE     │
+      │   (Vercel)      │         │   (Railway)     │         │   (Railway)     │
+      │                 │  HTTPS  │                 │   SQL   │                 │
+      │  Vue.js + Vite  │ ──────► │ Node.js/Express │ ──────► │  MySQL + ORM    │
+      │  DaisyUI/Tail   │ REST API│  JWT Auth       │ Queries │  Sequelize      │
+      │  Pinia State    │         │  Stripe API     │         │                 │
+      └─────────────────┘         └─────────────────┘         └─────────────────┘
+          </pre>
+        </div>
+        
+        <p class="text-lg leading-relaxed">
+          The application follows a three-tier architecture with a Vue.js frontend, Node.js/Express backend, and MySQL database. The frontend communicates with the backend through RESTful API endpoints, with JWT tokens securing protected routes. Stripe handles payment processing on the backend, while the admin dashboard uses auto-refresh to display real-time order updates.
+        </p>
+      </section>
+
+      <!-- Tech Stack Section -->
+      <section class="space-y-6">
+        <h2 class="text-3xl font-semibold mb-4">Tech Stack</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div class="bg-[#1E1E20] p-6 rounded-lg">
+            <h3 class="text-xl font-semibold mb-3 text-green-400">Frontend</h3>
+            <ul class="list-disc list-inside space-y-1 text-lg">
+              <li>Vue.js 3 - Progressive JavaScript framework</li>
+              <li>Vue Router - Client-side routing</li>
+              <li>Pinia - State management</li>
+              <li>DaisyUI - Component library</li>
+              <li>Tailwind CSS - Utility-first styling</li>
+              <li>Vite - Build tool</li>
+            </ul>
+          </div>
+          <div class="bg-[#1E1E20] p-6 rounded-lg">
+            <h3 class="text-xl font-semibold mb-3 text-blue-400">Backend</h3>
+            <ul class="list-disc list-inside space-y-1 text-lg">
+              <li>Node.js - JavaScript runtime</li>
+              <li>Express.js - Web framework</li>
+              <li>MySQL - Relational database</li>
+              <li>Sequelize ORM - Database management</li>
+              <li>JWT - Token authentication</li>
+              <li>bcrypt - Password hashing</li>
+              <li>Stripe API - Payment processing</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Key Features Section -->
+      <section class="space-y-6">
+        <h2 class="text-3xl font-semibold mb-4">Key Features</h2>
+        <div class="space-y-4">
+          <div class="bg-[#1E1E20] p-5 rounded-lg">
+            <h3 class="text-xl font-semibold mb-2">🔐 Secure Authentication</h3>
+            <p class="text-lg">JWT-based authentication with bcrypt password hashing (10 salt rounds). Protected admin routes with middleware verification and 1-hour token expiration for security.</p>
+          </div>
+          <div class="bg-[#1E1E20] p-5 rounded-lg">
+            <h3 class="text-xl font-semibold mb-2">📱 Mobile-First Design</h3>
+            <p class="text-lg">Responsive interface optimized for mobile ordering. Built with DaisyUI components and Tailwind CSS utilities for consistent styling across all screen sizes.</p>
+          </div>
+          <div class="bg-[#1E1E20] p-5 rounded-lg">
+            <h3 class="text-xl font-semibold mb-2">💳 Stripe Integration</h3>
+            <p class="text-lg">Backend payment processing with Stripe API. Payment intent creation and confirmation flow implemented, with webhook support ready for production use.</p>
+          </div>
+          <div class="bg-[#1E1E20] p-5 rounded-lg">
+            <h3 class="text-xl font-semibold mb-2">⚡ Real-Time Dashboard</h3>
+            <p class="text-lg">Admin dashboard with auto-refresh every 15 seconds. Order status management (Pending → Preparing → Ready → Completed) with instant updates.</p>
+          </div>
+          <div class="bg-[#1E1E20] p-5 rounded-lg">
+            <h3 class="text-xl font-semibold mb-2">🗄️ Database Design</h3>
+            <p class="text-lg">Relational database with proper foreign key relationships. Tables for MenuItems, Orders, OrderItems, Customizations, and Users with Sequelize ORM preventing SQL injection.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Application Screenshots Section -->
+      <section class="space-y-6">
+        <h2 class="text-3xl font-semibold mb-4 text-center">Admin Dashboard</h2>
+        <p class="text-lg leading-relaxed text-center mb-6">
+          Real-time order management interface with status updates and customer information.
+        </p>
+        <img src="images/coffeeshopdashboard.png" class="w-full rounded-lg shadow-2xl" alt="Coffee Shop Admin Dashboard">
+      </section>
+
+      <!-- Challenges and Solutions Section -->
+      <section class="space-y-6">
+        <h2 class="text-3xl font-semibold mb-4">Challenges and Solutions</h2>
+        <div class="space-y-4">
+          <div class="bg-[#1E1E20] p-5 rounded-lg border-l-4 border-red-500">
+            <h3 class="text-xl font-semibold mb-2">Challenge: CORS Configuration</h3>
+            <p class="text-lg mb-2">When deploying to production, the frontend on Vercel couldn't communicate with the backend on Railway due to CORS restrictions blocking cross-origin requests.</p>
+            <p class="text-lg"><span class="text-green-400 font-semibold">Solution:</span> Configured CORS middleware in Express to allow requests from the Vercel domain. Initially used wildcard (*) for testing, then restricted to specific origins for security.</p>
+          </div>
+          <div class="bg-[#1E1E20] p-5 rounded-lg border-l-4 border-red-500">
+            <h3 class="text-xl font-semibold mb-2">Challenge: Database Connection in Production</h3>
+            <p class="text-lg mb-2">Local database configuration was hardcoded to localhost, causing connection failures when deployed to Railway. Environment variables weren't being read correctly.</p>
+            <p class="text-lg"><span class="text-green-400 font-semibold">Solution:</span> Updated database config to use environment variables (DB_HOST, DB_USER, DB_PASSWORD) and set NODE_ENV=production. Tested connection using Railway's TCP proxy domain instead of private network.</p>
+          </div>
+          <div class="bg-[#1E1E20] p-5 rounded-lg border-l-4 border-red-500">
+            <h3 class="text-xl font-semibold mb-2">Challenge: JWT Token Validation</h3>
+            <p class="text-lg mb-2">Tokens created locally with one JWT_SECRET couldn't be verified in production with a different secret, causing 403 Forbidden errors on protected routes.</p>
+            <p class="text-lg"><span class="text-green-400 font-semibold">Solution:</span> Ensured consistent JWT_SECRET across environments and implemented proper token refresh on login. Added clear error messages for debugging authentication failures.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Development Process Section -->
+      <section class="space-y-6">
+        <h2 class="text-3xl font-semibold mb-4">Development Process</h2>
+        <p class="text-lg leading-relaxed">
+          Development began with database schema design using Sequelize models to establish relationships between entities. The backend API was built first, with endpoints for authentication, menu management, and order processing. JWT authentication was implemented early to secure admin routes.
+        </p>
+        <p class="text-lg leading-relaxed">
+          The frontend was developed incrementally, starting with the menu browsing interface, then adding cart functionality with Pinia for state management, and finally implementing the checkout flow. DaisyUI components were integrated for consistent UI styling across the application.
+        </p>
+        <p class="text-lg leading-relaxed">
+          Deployment involved separate hosting for frontend (Vercel) and backend (Railway), requiring careful environment variable management and CORS configuration. Database migration to Railway's MySQL service required adjusting connection parameters and using TCP proxy for external access.
+        </p>
+      </section>
+
+      <!-- What I Learned Section -->
+      <section class="space-y-6">
+        <h2 class="text-3xl font-semibold mb-4">What I Learned</h2>
+        <ul class="list-disc list-inside text-lg space-y-2 leading-relaxed">
+          <li>Production deployment considerations: CORS configuration, environment variables, and database connectivity across different hosting platforms</li>
+          <li>REST API design principles and proper HTTP status code usage (200, 201, 400, 401, 403, 500)</li>
+          <li>JWT authentication implementation with bcrypt password hashing and token expiration management</li>
+          <li>Database design with Sequelize ORM: defining models, relationships, and preventing SQL injection through parameterized queries</li>
+          <li>State management in Vue.js using Pinia for cart functionality and notification handling</li>
+          <li>Responsive design with Tailwind CSS utilities and mobile-first development approach</li>
+          <li>Debugging production issues using server logs, network inspection, and systematic troubleshooting</li>
+          <li>Payment processing workflow with Stripe API integration on the backend</li>
+        </ul>
+      </section>
+
+      <!-- Future Enhancements Section -->
+      <section class="space-y-6">
+        <h2 class="text-3xl font-semibold mb-4">Future Enhancements</h2>
+        <p class="text-lg leading-relaxed">
+          Future development will focus on completing the Stripe frontend integration for live payment processing, implementing customer accounts with order history, and adding email/SMS notifications for order status updates. Additional features include menu item images, advanced reporting and analytics for shop owners, loyalty rewards program, and multi-location support for coffee shop chains.
+        </p>
+      </section>
+
+      <!-- Try It Out Section -->
+      <section class="space-y-6 bg-blue-900 p-8 rounded-lg">
+        <h2 class="text-3xl font-semibold mb-4 text-center">Try It Out!</h2>
+        <p class="text-lg text-center mb-4">
+          Experience the live application and test the admin dashboard functionality!
+        </p>
+        <div class="flex justify-center">
+          <a href="https://coffee-app-frontend-eta.vercel.app" target="_blank" class="bg-gray-700 px-6 py-3 rounded-lg hover:bg-gray-600 transition text-lg font-semibold">
+            Live Demo
+          </a>
+        </div>
+        <p class="text-center text-sm mt-4">
+          💡 Admin Dashboard: Navigate to <code class="bg-black px-2 py-1 rounded">/admin</code> | Username: <code class="bg-black px-2 py-1 rounded">admin</code> | Password: <code class="bg-black px-2 py-1 rounded">password</code>
+        </p>
+      </section>
+
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-[#0F0F12] text-white py-8 px-4 text-center font-serif mt-20">
+      <div class="container mx-auto flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+        <div>
+          <h3 class="text-lg font-semibold mb-4">Projects</h3>
+          <a href="Coffee Shop App.html" class="hover:text-gray-400 block">Coffee Shop App</a>
+          <a href="Weather App.html" class="hover:text-gray-400 block">Weather App</a>
+          <a href="https://github.com/tanvirp10" target="_blank" class="hover:text-gray-400 block">GitHub Profile</a>
+        </div>
+        <div>
+          <h3 class="text-lg font-semibold mb-4">Contact</h3>
+          <a href="https://www.linkedin.com/in/tanvir-patwary-5817a418b/" target="_blank" class="hover:text-gray-400 block">LinkedIn</a>
+          <a href="mailto:tanvirp10@gmail.com" class="hover:text-gray-400 block">Email</a>
+          <a href="images/TanvirPatwary_Resume.pdf" target="_blank" class="hover:text-gray-400 block">Resume</a>
+        </div>
+      </div>
+    </footer>
+
+  </body>
+</html>
