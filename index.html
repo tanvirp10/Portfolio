@@ -50,18 +50,68 @@
 
     <div class="text-center px-10 lg:px-20 lg:w-2/3 mx-auto text-3xl pt-24 pb-10 leading-relaxed">
       <h1 class="font-serif">
-Hey, I'm Tan, a full-stack developer building production-ready web applications. Currently studying Computer Science at Georgia State University and seeking Summer 2026 internships in software development.</h1>
+Hey, I'm Tan, a full-stack developer building production-ready web applications and AI agents. Currently studying Computer Science at Georgia State University and seeking software engineering opportunities.</h1>
     </div>
-    
+
     <div class="text-center text-6xl py-32 animate-bounce">
       <h1>&#8595;</h1>
     </div>
-    
+
+    <!-- Experience Section -->
+    <div class="text-center mt-16">
+      <h1 class="mywork text-4xl font-bold mb-16">Experience</h1>
+    </div>
+
+    <div class="main space-y-16 px-10 max-w-screen-lg mx-auto fadeIn">
+      <!-- ADP Internship -->
+      <div class="flex flex-col bg-gradient-to-br from-gray-900 to-gray-800 border-2 border-gray-600 p-6 rounded-xl shadow-xl">
+        <img src="images/WorksheetAgentDemo.png" class="w-full h-auto rounded-lg shadow-lg mb-6" alt="ADP Assist panel for the Worksheet Agent inside ADP Workforce Now">
+        <div class="text-left">
+          <h1 class="text-3xl font-bold mb-1">Application Developer Intern @ ADP</h1>
+          <p class="text-sm text-gray-400 mb-4">May 2026 - Jul 2026 &middot; Alpharetta, GA</p>
+          <p class="text-lg leading-relaxed">
+            Built and shipped an MVP AI agent, the Worksheet Agent, embedded in ADP Workforce Now for the Human Resources Outsourcing (HRO) team, enabling payroll administrators to query employee and payroll data through natural language and reducing manual navigation and search time. Engineered a hub-and-spokes agent architecture using AWS Bedrock AgentCore, ADP AI Studio, and the Strands Agents SDK, integrating live Workforce Now Payroll APIs through MCP tools for real-time data retrieval. Applied Retrieval-Augmented Generation (RAG) to ground the LLM in verified payroll data, preventing hallucination in a financial context. Optimized LLM latency and prompt engineering, and built reusable UI components in Storybook. Operated within a full enterprise SDLC using Jira, Git, Bitbucket, Jenkins (CI/CD), and Splunk for distributed service debugging.
+          </p>
+          <div class="flex flex-wrap gap-2 mt-4">
+            <span class="bg-gray-700 px-3 py-1 rounded-lg text-xs">Spring Boot</span>
+            <span class="bg-gray-700 px-3 py-1 rounded-lg text-xs">Agentic AI Development</span>
+            <span class="bg-gray-700 px-3 py-1 rounded-lg text-xs">Amazon Bedrock</span>
+            <span class="bg-gray-700 px-3 py-1 rounded-lg text-xs">Model Context Protocol (MCP)</span>
+            <span class="bg-gray-700 px-3 py-1 rounded-lg text-xs">Prompt Engineering</span>
+            <span class="bg-gray-700 px-3 py-1 rounded-lg text-xs">Retrieval-Augmented Generation (RAG)</span>
+            <span class="bg-gray-700 px-3 py-1 rounded-lg text-xs">Storybook</span>
+            <span class="bg-gray-700 px-3 py-1 rounded-lg text-xs">CI/CD</span>
+            <span class="bg-gray-700 px-3 py-1 rounded-lg text-xs">Splunk</span>
+            <span class="bg-gray-700 px-3 py-1 rounded-lg text-xs">Jenkins</span>
+            <span class="bg-gray-700 px-3 py-1 rounded-lg text-xs">Jira</span>
+            <span class="bg-gray-700 px-3 py-1 rounded-lg text-xs">Bitbucket</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Georgia EPD Internship -->
+      <div class="flex flex-col items-start bg-gradient-to-br from-gray-900 to-gray-800 border-2 border-gray-600 p-6 rounded-xl shadow-xl text-left">
+        <h1 class="text-3xl font-bold mb-1">Software Development Intern @ Georgia Environmental Protection Division</h1>
+        <p class="text-sm text-gray-400 mb-4">May 2024 - Jan 2025 &middot; Atlanta, GA</p>
+        <p class="text-lg leading-relaxed">
+          Developed and maintained .NET applications using C# and JavaScript frameworks, resolving 20+ weekly software issues. Implemented comprehensive unit testing with the NUnit framework, executing 100+ tests and increasing application reliability by 25%. Deployed applications to AWS cloud infrastructure maintaining 95% uptime, and collaborated with an 8-member cross-functional team using Git.
+        </p>
+        <div class="flex flex-wrap gap-2 mt-4">
+          <span class="bg-gray-700 px-3 py-1 rounded-lg text-xs">.NET</span>
+          <span class="bg-gray-700 px-3 py-1 rounded-lg text-xs">C#</span>
+          <span class="bg-gray-700 px-3 py-1 rounded-lg text-xs">JavaScript</span>
+          <span class="bg-gray-700 px-3 py-1 rounded-lg text-xs">NUnit</span>
+          <span class="bg-gray-700 px-3 py-1 rounded-lg text-xs">AWS</span>
+          <span class="bg-gray-700 px-3 py-1 rounded-lg text-xs">Git</span>
+        </div>
+      </div>
+    </div>
+
     <!-- My Work Section -->
-    <div class="text-center mt-48"> <!-- Increased top margin to push down "My Work" -->
+    <div class="text-center mt-32"> <!-- Increased top margin to push down "My Work" -->
       <h1 class="mywork text-4xl font-bold mb-16">My Work</h1>
     </div>
-    
+
 
     <!-- Project Section -->
     <div class="main mt-10 space-y-16 px-10 max-w-screen-lg mx-auto fadeIn">
@@ -72,14 +122,14 @@ Hey, I'm Tan, a full-stack developer building production-ready web applications.
       </div>
 
       <!-- Coffee Shop Project -->
-      <div class="excursion flex flex-col lg:flex-row items-center space-y-6 lg:space-y-0 lg:space-x-10 bg-gradient-to-br from-gray-900 to-gray-800 border-2 border-blue-500 p-6 rounded-xl shadow-xl">
+      <div class="excursion flex flex-col lg:flex-row items-center space-y-6 lg:space-y-0 lg:space-x-10 bg-gradient-to-br from-gray-900 to-gray-800 border-2 border-gray-600 p-6 rounded-xl shadow-xl">
         <a href="Coffee Shop App.html" target="_blank" class="w-full lg:w-1/2">
           <img src="images/coffeeshopdashboard.png" class="excursionimg w-full h-auto rounded-lg shadow-lg hover:scale-105 transition-transform duration-300" alt="Coffee Shop App">
         </a>
         <div class="excursioncontent lg:w-1/2 text-left">
           <!-- Live Project Badge -->
           <div class="flex items-center space-x-2 mb-3">
-            <span class="bg-blue-500 text-white px-3 py-1 rounded-lg font-semibold text-xs">🚀 LIVE PROJECT DEPLOYED</span>
+            <span class="bg-[#0F0F12] text-white px-3 py-1 rounded-lg font-semibold text-xs">🚀 LIVE PROJECT DEPLOYED</span>
           </div>
           
           <!-- Title -->
@@ -105,14 +155,22 @@ Hey, I'm Tan, a full-stack developer building production-ready web applications.
         </div>
       </div>
 
-      <!-- Weather App Project -->
-      <div class="excursion flex flex-col lg:flex-row items-center space-y-6 lg:space-y-0 lg:space-x-10">
-        <a href="Weather App.html" class="w-full lg:w-1/2">
-          <img src="images/Weather App Cover.jpg" class="excursionimg w-full h-auto rounded-lg" alt="Weather App">
-        </a>
-        <div class="excursioncontent lg:w-1/2 text-left">
-          <h1 class="text-2xl font-bold mb-2">Weather App</h1>
-          <p class="text-lg">A modern weather app with dynamic animations, accurate forecasts, and a visually appealing design for an immersive and delightful user experience.</p>
+      <!-- FlowStaff Project -->
+      <div class="flex flex-col items-start bg-gradient-to-br from-gray-900 to-gray-800 border-2 border-gray-600 p-6 rounded-xl shadow-xl text-left">
+        <div class="flex items-center space-x-2 mb-3">
+          <span class="bg-[#0F0F12] text-white px-3 py-1 rounded-lg font-semibold text-xs">🚧 WORK IN PROGRESS</span>
+        </div>
+        <h1 class="text-3xl font-bold mb-3">FlowStaff</h1>
+        <p class="text-lg mb-4 leading-relaxed">
+          A workforce-management REST API built with Spring Boot and PostgreSQL, following a layered Controller &rarr; Service &rarr; Repository architecture with DTO-based data protection. Implements JWT authentication, BCrypt password hashing, and role-based access control (RBAC) via Spring Security, with AppSec best practices including input validation, mass-assignment protection, and OWASP-aligned data exposure controls.
+        </p>
+        <div class="flex flex-wrap gap-2">
+          <span class="bg-gray-700 px-3 py-1 rounded-lg text-xs">Spring Boot</span>
+          <span class="bg-gray-700 px-3 py-1 rounded-lg text-xs">PostgreSQL</span>
+          <span class="bg-gray-700 px-3 py-1 rounded-lg text-xs">Spring Security</span>
+          <span class="bg-gray-700 px-3 py-1 rounded-lg text-xs">JWT</span>
+          <span class="bg-gray-700 px-3 py-1 rounded-lg text-xs">RBAC</span>
+          <span class="bg-gray-700 px-3 py-1 rounded-lg text-xs">AppSec</span>
         </div>
       </div>
     </div>
